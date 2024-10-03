@@ -1,24 +1,63 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Clonación del Proyecto `productos_crud_ror`
 
-Things you may want to cover:
+## Prerrequisitos
 
-* Ruby version
+Antes de clonar y ejecutar este proyecto, asegúrate de tener instalados los siguiente:
 
-* System dependencies
+- [**Ruby**](https://www.ruby-lang.org/en/documentation/installation/) (versión recomendada: 3.3.0 o superior)
+- [**Rails**](https://guides.rubyonrails.org/getting_started.html) (versión recomendada: 7.0 o superior)
 
-* Configuration
+## Pasos para Clonar y Ejecutar la Aplicación
 
-* Database creation
+1. **Clonar el Repositorio**
 
-* Database initialization
+    Abre tu terminal y ejecuta el siguiente comando para clonar el repositorio:
 
-* How to run the test suite
+    ```sh
+    git clone https://github.com/Soinekro/productos_crud_ror.git
+    ```
 
-* Services (job queues, cache servers, search engines, etc.)
+2. **Navegar al Directorio del Proyecto**
 
-* Deployment instructions
+    ```sh
+    cd productos_crud_ror
+    ```
 
-* ...
+3. **Instalar Dependencias**
+
+    Ejecuta el siguiente comando para instalar las gemas necesarias:
+
+    ```sh
+    bundle install
+    ```
+
+4. **Configurar la Base de Datos**
+
+    Configura la base de datos ejecutando los siguientes comandos:
+
+    ```sh
+    bin/rails db:create
+    bin/rails db:migrate
+    ```
+    para windows usar
+    ```sh
+    ruby bin/rails db:create
+    ruby bin/rails db:migrate
+    ```
+5. **Iniciar el Servidor**
+
+    Finalmente, inicia el servidor de Rails con el siguiente comando:
+
+    ```sh
+    rails server
+    ```
+    paa windows
+     ```sh
+    ruy bin/rails server
+    ```
+
+6. **Acceder a la Aplicación**
+
+    Abre tu navegador web y navega a `http://localhost:3000` para ver la aplicación en funcionamiento.
